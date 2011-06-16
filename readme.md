@@ -1,6 +1,6 @@
 #  HTML5 Reset Sass Add-on
 
-This is a Compass / Sass add-on for HTML5 Reset - https://github.com/murtaugh/HTML5-Reset
+This is a Compass / Sass version of HTML5 Reset - https://github.com/murtaugh/HTML5-Reset
 
 ## HTML5 Reset Summary:
 
