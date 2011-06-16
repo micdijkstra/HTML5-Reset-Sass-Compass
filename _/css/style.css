@@ -1,177 +1,136 @@
-/*
-	HTML5 Reset :: style.css
-	----------------------------------------------------------
-	We have learned much from/been inspired by/taken code where offered from:
-	
-	Eric Meyer					:: http://ericmeyer.com
-	HTML5 Doctor				:: http://html5doctor.com
-	and the HTML5 Boilerplate	:: http://html5boilerplate.com
-	
--------------------------------------------------------------------------------*/
+/* line 12, ../sass/partials/_html5reset.sass */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 
-/* Let's default this puppy out
--------------------------------------------------------------------------------*/
+/* line 21, ../sass/partials/_html5reset.sass */
+article, aside, figure, footer, header, hgroup, nav, section { display: block; }
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}									
+/* line 27, ../sass/partials/_html5reset.sass */
+img, object, embed { max-width: 100%; }
 
-article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+/* line 31, ../sass/partials/_html5reset.sass */
+html { overflow-y: scroll; }
 
-/* Responsive images and other embedded objects
-   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
-   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
-img,
-object,
-embed {max-width: 100%;}
+/* line 37, ../sass/partials/_html5reset.sass */
+ul { list-style: none; }
 
-/* force a vertical scrollbar to prevent a jumpy page */
-html {overflow-y: scroll;}
+/* line 40, ../sass/partials/_html5reset.sass */
+blockquote, q { quotes: none; }
 
-/* we use a lot of ULs that aren't bulleted. 
-	don't forget to restore the bullets within content. */
-ul {list-style: none;}
+/* line 43, ../sass/partials/_html5reset.sass */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
 
-blockquote, q {quotes: none;}
+/* line 47, ../sass/partials/_html5reset.sass */
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 
-blockquote:before, 
-blockquote:after, 
-q:before, 
-q:after {content: ''; content: none;}
+/* line 54, ../sass/partials/_html5reset.sass */
+del { text-decoration: line-through; }
 
-a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+/* line 57, ../sass/partials/_html5reset.sass */
+abbr[title], dfn[title] { border-bottom: 1px dotted black; cursor: help; }
 
-del {text-decoration: line-through;}
+/* line 62, ../sass/partials/_html5reset.sass */
+table { border-collapse: collapse; border-spacing: 0; }
 
-abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+/* line 65, ../sass/partials/_html5reset.sass */
+th { font-weight: bold; vertical-align: bottom; }
 
-/* tables still need cellspacing="0" in the markup */
-table {border-collapse: collapse; border-spacing: 0;}
-th {font-weight: bold; vertical-align: bottom;}
-td {font-weight: normal; vertical-align: top;}
+/* line 68, ../sass/partials/_html5reset.sass */
+td { font-weight: normal; vertical-align: top; }
 
-hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+/* line 72, ../sass/partials/_html5reset.sass */
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #cccccc; margin: 1em 0; padding: 0; }
 
-input, select {vertical-align: middle;}
+/* line 80, ../sass/partials/_html5reset.sass */
+input, select { vertical-align: middle; }
 
-pre {
-	white-space: pre; /* CSS2 */
-	white-space: pre-wrap; /* CSS 2.1 */
-	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
-	word-wrap: break-word; /* IE */
-}
+/* line 83, ../sass/partials/_html5reset.sass */
+pre { white-space: pre; white-space: pre-wrap; white-space: pre-line; word-wrap: break-word; }
 
-input[type="radio"] {vertical-align: text-bottom;}
-input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
-.ie6 input {vertical-align: text-bottom;}
+/* line 89, ../sass/partials/_html5reset.sass */
+input[type="radio"] { vertical-align: text-bottom; }
 
-select, input, textarea {font: 99% sans-serif;}
+/* line 91, ../sass/partials/_html5reset.sass */
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
 
-table {font-size: inherit; font: 100%;}
- 
-/* Accessible focus treatment
-	people.opera.com/patrickl/experiments/keyboard/test */
-a:hover, a:active {outline: none;}
+/* line 94, ../sass/partials/_html5reset.sass */
+.ie6 input { vertical-align: text-bottom; }
 
-small {font-size: 85%;}
+/* line 97, ../sass/partials/_html5reset.sass */
+select, input, textarea { font: 99% sans-serif; }
 
-strong, th {font-weight: bold;}
+/* line 100, ../sass/partials/_html5reset.sass */
+table { font-size: inherit; font: 100%; }
 
-td, td img {vertical-align: top;} 
+/* line 106, ../sass/partials/_html5reset.sass */
+a:hover, a:active { outline: none; }
 
-/* Make sure sup and sub don't screw with your line-heights
-	gist.github.com/413930 */
-sub, sup {font-size: 75%; line-height: 0; position: relative;}
-sup {top: -0.5em;}
-sub {bottom: -0.25em;}
+/* line 109, ../sass/partials/_html5reset.sass */
+small { font-size: 85%; }
 
-/* standardize any monospaced elements */
-pre, code, kbd, samp {font-family: monospace, sans-serif;}
+/* line 112, ../sass/partials/_html5reset.sass */
+strong, th { font-weight: bold; }
 
-/* hand cursor on clickable elements */
-.clickable,
-label, 
-input[type=button], 
-input[type=submit], 
-button {cursor: pointer;}
+/* line 115, ../sass/partials/_html5reset.sass */
+td, td img { vertical-align: top; }
 
-/* Webkit browsers add a 2px margin outside the chrome of form elements */
-button, input, select, textarea {margin: 0;}
+/* line 120, ../sass/partials/_html5reset.sass */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
 
-/* make buttons play nice in IE */
-button {width: auto; overflow: visible;}
- 
-/* scale images in IE7 more attractively */
-.ie7 img {-ms-interpolation-mode: bicubic;}
+/* line 124, ../sass/partials/_html5reset.sass */
+sup { top: -0.5em; }
 
-/* prevent BG image flicker upon hover */
-.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+/* line 126, ../sass/partials/_html5reset.sass */
+sub { bottom: -0.25em; }
 
-/* let's clear some floats */
-.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
-.clearfix:after { clear: both; }  
-.clearfix { zoom: 1; }  
+/* line 130, ../sass/partials/_html5reset.sass */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
+/* line 134, ../sass/partials/_html5reset.sass */
+.clickable, label, input[type=button], input[type=submit], button { cursor: pointer; }
 
+/* line 138, ../sass/partials/_html5reset.sass */
+button, input, select, textarea { margin: 0; }
 
-/* Ok, this is where the fun starts.
--------------------------------------------------------------------------------*/
+/* line 142, ../sass/partials/_html5reset.sass */
+button { width: auto; overflow: visible; }
 
-/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
-body {font: 13px Helmet, Freesans, sans-serif;}
+/* line 147, ../sass/partials/_html5reset.sass */
+.ie7 img { -ms-interpolation-mode: bicubic; }
 
-/* using local fonts? make sure to read up on Paul Irish's 
-	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+/* line 150, ../sass/partials/_html5reset.sass */
+.ie6 html { filter: expression(document.execCommand("BackgroundImageCache", false, true)); }
 
-/* we like off-black for text */
-body, select, input, textarea {color: #333;}
+/* line 154, ../sass/partials/_html5reset.sass */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 
-a {color: #03f;}
-a:hover {color: #69f;}
+/* line 159, ../sass/partials/_html5reset.sass */
+.clearfix:after { clear: both; }
 
-/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
-::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
-::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+/* line 161, ../sass/partials/_html5reset.sass */
+.clearfix { zoom: 1; }
 
-/*	j.mp/webkit-tap-highlight-color */
-a:link {-webkit-tap-highlight-color: #fcd700;} 
+/* line 16, ../sass/style.sass */
+body { font: 13px Helmet, Freesans, sans-serif; }
 
-ins {background-color: #fcd700; color: #000; text-decoration: none;}
-mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+/* line 23, ../sass/style.sass */
+body, select, input, textarea { color: #333333; }
 
+/* line 31, ../sass/style.sass */
+a, a:visited { color: #0033ff; }
+/* line 34, ../sass/style.sass */
+a:hover, a:active, a:visited:hover, a:visited:active { color: #6699ff; }
 
+/* line 38, ../sass/style.sass */
+::-moz-selection { background: #fcd700; color: white; text-shadow: none; }
 
+/* line 42, ../sass/style.sass */
+::selection { background: #fcd700; color: white; text-shadow: none; }
 
+/* line 48, ../sass/style.sass */
+a:link { -webkit-tap-highlight-color: #fcd700; }
 
-/* Print styles!
--------------------------------------------------------------------------------*/
-@media print {
+/* line 68, ../sass/style.sass */
+ins { background-color: #fcd700; color: black; text-decoration: none; }
 
-
-
-}
-
-
-/* Media queries!
--------------------------------------------------------------------------------*/
-
-/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {
-	
-		
-}
-
-@media all and (orientation: portrait) {
-	
-}
-
-@media all and (orientation: landscape) {
-	
-}
-
+/* line 72, ../sass/style.sass */
+mark { background-color: #fcd700; color: black; font-style: italic; font-weight: bold; }
